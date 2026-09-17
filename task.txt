@@ -1,0 +1,226 @@
+
+Please find below task that has to be accomplished by 17th Sept EOD.
+
+You can use copilot for generating code. I want you to show the working functionality.
+
+ 
+
+Get the below parameters from android mobile phone:
+
+Use MQTT for communication between cloud and R-Pi board.
+Send some data between could and R-Pi to verify the same.
+You can collect the R-Pi from Varsha for 2 days.
+Basically, you can send the disk free data to cloud just to verify.
+ 
+
+Need the output to be in JSON format.
+
+Use current MQTT server PC  and use PC to which R-Pi is connected and for cloud u can use same AQuA system. Add new API, and this API should send details to cloud and display in json format.
+
+Let me know if you have any doubts about the task mentioned.
+
+ 
+
+Sample JSON output:
+
+ 
+
+{
+
+        "Devine_name":        "",
+
+        "timestamp":    "2026-05-18T08:32:40Z",
+
+        "privilege-processes":  {
+
+                "ps_output":    {
+
+                        "root_processes":       [{
+
+                                        "pid":  10706,
+
+                                        "user": "root",
+
+                                        "vsz":  "78360",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/bin/rfc_agent"
+
+                                }, {
+
+                                        "pid":  10789,
+
+                                        "user": "root",
+
+                                        "vsz":  "2900",
+
+                                        "stat": "S",
+
+                                        "command":      "{xhStartup.sh} /bin/sh /opt/icontrol/bin/xhStartup.sh"
+
+                                }, {
+
+                                        "pid":  10846,
+
+                                        "user": "root",
+
+                                        "vsz":  "75844",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/bin/harvester"
+
+                                }, {
+
+                                        "pid":  10865,
+
+                                        "user": "root",
+
+                                        "vsz":  "117m",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/bin/meshAgent -subsys eRT."
+
+                                }, {
+
+                                        "pid":  11228,
+
+                                        "user": "root",
+
+                                        "vsz":  "57200",
+
+                                        "stat": "S",
+
+                                        "command":      "/opt/icontrol/sbin/xhWatchdogService -c /nvram/icontrol -h /opt/icontrol"
+
+                                }, {
+
+                                        "pid":  11348,
+
+                                        "user": "root",
+
+                                        "vsz":  "0",
+
+                                        "stat": "IW",
+
+                                }, {
+
+                                        "pid":  32477,
+
+                                        "user": "root",
+
+                                        "vsz":  "0",
+
+                                        "stat": "IW",
+
+                                        "command":      "[kworker/1:2]"
+
+                                }],
+
+                        "non_root_processes":   [{
+
+                                        "pid":  10040,
+
+                                        "user": "non-root",
+
+                                        "vsz":  "5096",
+
+                                        "stat": "S",
+
+                                        "command":      "dibbler-client start -w /etc/dibbler/erouter0"
+
+                                }, {
+
+                                        "pid":  10645,
+
+                                        "user": "non-root",
+
+                                        "vsz":  "119m",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/bin/webconfig"
+
+                                }, {
+
+                                        "pid":  12801,
+
+                                        "user": "non-root",
+
+                                        "vsz":  "14520",
+
+                                        "stat": "S",
+
+                                        "command":      "lighttpd -f /etc/lighttpd.conf"
+
+                                }, {
+
+                                        "pid":  14384,
+
+                                        "user": "non-root",
+
+                                        "vsz":  "62780",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/bin/CcspMtaAgentSsp -subsys eRT."
+
+                                }, {
+
+                                        "pid":  16056,
+
+                                        "user": "non-root",
+
+                                        "vsz":  "56728",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/bin/aker -p tcp://127.0.0.1:6666 -c tcp://127.0.0.1:8888 -w /usr/bin/parcon -d /nvram/pcs.bin -f /nvram/pcs.bin.md5 -i mac:d4e2cb9d50a4"
+
+                                }],
+
+                        "other_processes":      [{
+
+                                        "pid":  14220,
+
+                                        "user": "_cujo-ag",
+
+                                        "vsz":  "53880",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/lib/cujo-agent"
+
+                                }, {
+
+                                        "pid":  15108,
+
+                                        "user": "nobody",
+
+                                        "vsz":  "2388",
+
+                                        "stat": "S",
+
+                                        "command":      "dnsmasq -q --clear-on-reload --bind-dynamic --add-mac --add-cpe-id=abcdefgh -P 4096 -C /var/dnsmasq.conf --dhcp-authoritative --stop-dns-rebind --log-facility=/rdklogs/logs/dnsmasq.log"
+
+                                }, {
+
+                                        "pid":  15672,
+
+                                        "user": "ntp",
+
+                                        "vsz":  "8356",
+
+                                        "stat": "S",
+
+                                        "command":      "/usr/sbin/ntpd -u ntp:ntp -p /run/ntpd.pid -l /rdklogs/logs/ntpLog.log -c /tmp/ntp.conf -g"
+
+                                }]
+
+                }
+
+        }
+
+}
